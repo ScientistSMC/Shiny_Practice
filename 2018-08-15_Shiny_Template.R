@@ -1,5 +1,5 @@
 library(shiny)
-ui <- fluidPage(sliderInput(inputId = "num", 
+ui <- fluidPage(numericInput(inputId = "num", 
                             label = "Choose a number", 
                             value = 25, min = 1, max = 100),
                 plotOutput("hist"))
